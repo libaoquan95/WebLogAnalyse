@@ -8,7 +8,7 @@ Spark 实践——基于 Spark Streaming 的实时日志分析系统
 ## 1.模拟生成 web log 记录
 在日志中，每行代表一条访问记录，典型格式如下：
 ```
-46.156.87.72 - - [2018-05-15 06:00:30] "GET /upload.php HTTP/1.1" 200 0 "-" "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" "-"
+46.156.87.72 - - [2018-05-15 06:00:30] "GET /upload.php HTTP/1.1" 200 0 "http://www.baidu.com/s?wd=spark" "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" "-"
 ```
 分别代表：访问 ip，时间戳，访问页面，响应状态，搜索引擎索引，访问 Agent。
 
