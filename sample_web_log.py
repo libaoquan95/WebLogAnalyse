@@ -57,7 +57,7 @@ class WebLogGeneration(object):
         time_str = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
         while count >1:
             query_log = "{ip} - - [{local_time}] \"GET /{url} HTTP/1.1\" 200 0 \"{refer}\" \"{user_agent}\" \"-\"".format(ip=self.sample_ip(),local_time=time_str,url=self.sample_url(),refer=self.sample_refer(),user_agent=self.sample_user_agent())
-            print query_log
+            print (query_log)
             count = count -1
 
 if __name__ == "__main__":
